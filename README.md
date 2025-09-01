@@ -20,7 +20,7 @@ to move your idea from experiments to reliable production implementations.
 
 Checkout the documentation: https://docs.neuron-ai.dev
 
-## Features
+## Deep Research Features
 
 - **Modular Workflow Architecture**: Easily extensible with nested workflows
 - **Automated Research**: Generate queries and perform web searches
