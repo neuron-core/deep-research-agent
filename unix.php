@@ -17,7 +17,7 @@ if (empty($input)) {
     exit(0);
 }
 
-$workflow = new DeepResearchAgent($input, 1);
+$workflow = new DeepResearchAgent($input, 3);
 
 $handler = $workflow->start();
 
