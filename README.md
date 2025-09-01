@@ -7,7 +7,7 @@ with a focus on modularity, extensibility, and real-time results.
 
 ![](cover.png)
 
-# NeuronAI PHP framework
+## NeuronAI PHP framework
 Neuron is an agentic framework that allows you to create full-featured AI Agents in PHP.
 It definitively fills the gap for AI Agents development between PHP and other ecosystems like Python or Javascript.
 
