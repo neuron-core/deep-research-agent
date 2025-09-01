@@ -1,6 +1,7 @@
 # Open Deep Research Agent - Neuron V2
-This project is inspired by Open Deep Research, which uses LangGraph for implementation. 
-Our version leverages [Neuron](https://docs.neuron-ai.dev/v2/) to create a powerful, modular workflow for research and analysis.
+This project is inspired by Open Deep Research, which uses LangGraph for implementation. Other implementations exist 
+also for llamaindex, and others. Our version leverages [Neuron](https://docs.neuron-ai.dev/v2/) to create a powerful, 
+modular workflow for research and analysis.
 
 Neuron Open Deep Research provides a structured approach to generating comprehensive research reports on any topic using large language models, 
 with a focus on modularity, extensibility, and real-time results.
