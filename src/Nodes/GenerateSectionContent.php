@@ -15,6 +15,9 @@ use NeuronAI\Workflow\Node;
 use NeuronAI\Workflow\WorkflowInterrupt;
 use NeuronAI\Workflow\WorkflowState;
 
+/**
+ * For multiple sections this node will be called multiple times.
+ */
 class GenerateSectionContent extends Node
 {
     /**
