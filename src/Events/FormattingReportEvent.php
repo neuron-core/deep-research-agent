@@ -2,7 +2,7 @@
 
 namespace App\Events;
 
-use App\Workflow\Agents\ReportPlanOutput;
+use App\Agents\ReportPlanOutput;
 use NeuronAI\Workflow\Event;
 
 class FormattingReportEvent implements Event

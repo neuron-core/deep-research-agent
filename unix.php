@@ -5,9 +5,9 @@ use App\Events\ProgressEvent;
 use Gbhorwood\Macrame\Macrame;
 
 
-include __DIR__ . '/../vendor/autoload.php';
+include __DIR__ . '/vendor/autoload.php';
 
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__.'/..');
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
 // instantiate a Macrame object with the script name
