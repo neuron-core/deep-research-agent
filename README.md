@@ -1,13 +1,13 @@
-# Open Deep Research Agent - NeuronAI V2
+# Open Deep Research Agent - Neuron V2
 This project is inspired by Open Deep Research, which uses LangGraph for implementation. 
-Our version leverages [NeuronAI](https://docs.neuron-ai.dev/v2/) to create a powerful, modular workflow for research and analysis.
+Our version leverages [Neuron](https://docs.neuron-ai.dev/v2/) to create a powerful, modular workflow for research and analysis.
 
-NeuronAI Open Deep Research provides a structured approach to generating comprehensive research reports on any topic using large language models, 
+Neuron Open Deep Research provides a structured approach to generating comprehensive research reports on any topic using large language models, 
 with a focus on modularity, extensibility, and real-time results.
 
 ![](cover.png)
 
-## NeuronAI PHP framework
+## Neuron PHP framework
 Neuron is an agentic framework that allows you to create full-featured AI Agents in PHP.
 It definitively fills the gap for AI Agents development between PHP and other ecosystems like Python or Javascript.
 
