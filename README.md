@@ -35,6 +35,18 @@ TAVILY_API_KEY=[required]
 INSPECTOR_INGESTION_KEY=
 ```
 
+For Windows machine run
+
+```
+php .\windows.php
+```
+
+For Unix machine run:
+
+```
+php unix.php
+```
+
 ## Workflow architecture and Nodes
 
 ### DeepResearchAgent: Orchestrates the overall report generation process
