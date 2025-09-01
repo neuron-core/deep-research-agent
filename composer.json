@@ -1,0 +1,31 @@
+{
+  "name": "inspector-apm/neuron-demo",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Valerio Barbera",
+      "email": "valerio@inspector.dev"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/inspector-apm/neuron-ai"
+    }
+  ],
+  "require": {
+    "php": "^8.1",
+    "inspector-apm/neuron-ai": "2.*@dev",
+    "vlucas/phpdotenv": "^5.6",
+    "gbhorwood/macrame": "^1.02"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  },
+  "scripts": {
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
