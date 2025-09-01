@@ -1,7 +1,7 @@
 <?php
 
-use App\Workflow\DeepResearchAgent;
-use App\Workflow\Events\ProgressEvent;
+use App\DeepResearchAgent;
+use App\Events\ProgressEvent;
 use Gbhorwood\Macrame\Macrame;
 
 
@@ -13,6 +13,13 @@ $dotenv->load();
 // instantiate a Macrame object with the script name
 $macrame = new Macrame("NeuronAI Workflow Demo");
 
+// only execute if run from the command line
+if($macrame->running()) {
+    // confirm host is good. die on failure.
+    $macrame->preflight();
+}
+
+// Run the workflow
 $run = function (string $input, Macrame $macrame): void {
     $workflow = new DeepResearchAgent($input, 2); // Limit to 1 for testing
 
@@ -27,20 +34,15 @@ $run = function (string $input, Macrame $macrame): void {
     $macrame->text($handler->getResult()->get('report'))->write(true);
 };
 
-// only execute if run from the command line
-if($macrame->running()) {
-    // confirm host is good. die on failure.
-    $macrame->preflight();
+// Interactive console
+$input = $macrame->input()->readline("Describe the topic: ");
 
-    $input = $macrame->input()->readline("Describe the topic: ");
-
-    if (empty($input)) {
-        $macrame->exit();
-    }
-
-    $macrame->spinner('dots 3')
-        ->colour('green')
-        ->run($run, [$input, $macrame]);
-
+if (empty($input)) {
     $macrame->exit();
 }
+
+$macrame->spinner('dots 3')
+    ->colour('green')
+    ->run($run, [$input, $macrame]);
+
+$macrame->exit();

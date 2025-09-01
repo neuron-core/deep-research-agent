@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Workflow;
+namespace App;
 
-use App\Workflow\Nodes\Format;
-use App\Workflow\Nodes\GenerateSectionContent;
-use App\Workflow\Nodes\Planning;
+use App\Nodes\Format;
+use App\Nodes\GenerateSectionContent;
+use App\Nodes\Planning;
 use NeuronAI\Exceptions\WorkflowException;
 use NeuronAI\Workflow\Workflow;
 use NeuronAI\Workflow\WorkflowState;

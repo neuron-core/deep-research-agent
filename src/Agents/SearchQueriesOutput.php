@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Workflow\Agents;
+namespace App\Agents;
 
 use NeuronAI\StructuredOutput\SchemaProperty;
 

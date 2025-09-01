@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Workflow\Nodes;
+namespace App\Nodes;
 
-use App\Workflow\Agents\ReportSection;
-use App\Workflow\Agents\ResearchAgent;
-use App\Workflow\Events\ProgressEvent;
-use App\Workflow\Events\FormattingReportEvent;
-use App\Workflow\Prompts;
+use App\Agents\ReportSection;
+use App\Agents\ResearchAgent;
+use App\Events\ProgressEvent;
+use App\Events\FormattingReportEvent;
+use App\Prompts;
 use NeuronAI\Chat\Messages\UserMessage;
 use NeuronAI\Workflow\Node;
 use NeuronAI\Workflow\StopEvent;

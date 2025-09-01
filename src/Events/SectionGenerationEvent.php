@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Workflow\Events;
+namespace App\Events;
 
 use App\Workflow\Agents\ReportPlanOutput;
 use NeuronAI\Workflow\Event;

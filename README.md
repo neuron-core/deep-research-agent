@@ -1,46 +1,49 @@
-# Neuron AI - Examples
-This repository contains several examples of how to use the Neuron AI framework to create fully featured AI Agents and RAG systems in PHP.
+# Open Deep Research Agent - NeuronAI
+This project is inspired by Open Deep Research, which uses LangGraph for implementation. 
+Our version leverages [NeuronAI](https://docs.neuron-ai.dev/v2/) to create a powerful, modular workflow for research and analysis.
 
-## Create an Agent
+NeuronAI Open Deep Research provides a structured approach to generating comprehensive research reports on any topic using large language models, 
+with a focus on modularity, extensibility, and real-time results.
 
-Neuron provides you with the Agent class you can extend to inherit the main features of the framework 
-and create fully functional agents. This class automatically manages some advanced mechanisms for you such as memory,
-tools and function calls, up to the RAG systems. You can go deeper into these aspects in the [documentation](https://docs.neuron-ai.dev).
-In the meantime, let's create the first agent, extending the `NeuronAI\Agent` class:
+![](cover.png)
 
-```php
-use NeuronAI\Agent;
-use NeuronAI\SystemPrompt;
-use NeuronAI\Providers\AIProviderInterface;
-use NeuronAI\Providers\Anthropic\Anthropic;
+## Features
 
-class YouTubeAgent extends Agent
-{
-    public function provider(): AIProviderInterface
-    {
-        return new Anthropic(
-            key: 'ANTHROPIC_API_KEY',
-            model: 'ANTHROPIC_MODEL',
-        );
-    }
+- **Modular Workflow Architecture**: Easily extensible with nested workflows
+- **Automated Research**: Generate queries and perform web searches
+- **Structured Reports**: Create well-organized reports with customizable sections
+- **Performance Monitoring**: Track execution time of workflow steps
+- **Streaming Results**: Get real-time updates as the report is generated
 
-    public function instructions(): string
-    {
-        return new SystemPrompt(
-            background: ["You are an AI Agent specialized in writing YouTube video summaries."],
-            steps: [
-                "Get the url of a YouTube video, or ask the user to provide one.",
-                "Use the tools you have available to retrieve the transcription of the video.",
-                "Write the summary.",
-            ],
-            output: [
-                "Write a summary in a paragraph without using lists. Use just fluent text.",
-                "After the summary add a list of three sentences as the three most important take away from the video.",
-            ]
-        );
-    }
-}
+## How to use this project
+Download the project on your machine and open your terminal into the project directory. First, install the composer dependencies:
+
+```
+composer install
 ```
 
-The `SystemPrompt` class is designed to take your base instructions and build a consistent prompt for the underlying model
-reducing the effort for prompt engineering.
+Create a .env file in your project root (see .env.example for a template), and provides the API keys based on 
+the service you want to connect with.
+
+```dotenv
+ANTHROPIC_API_KEY=
+GEMINI_API_KEY=
+OPENAI_API_KEY=
+
+TAVILY_API_KEY=[required]
+
+INSPECTOR_INGESTION_KEY=
+```
+
+## Workflow architecture and Nodes
+
+### DeepResearchAgent: Orchestrates the overall report generation process
+
+- **Planning**: Creates the structure of the report
+- **GenerateSectionContent**: Generates content for each section using search results
+- **Format**: Compiles the final report
+
+### SearchWorkflow: Handles search operations as a nested workflow
+
+- **GenerateQueries**: Creates search queries based on section topics
+- **SearchTheWeb**: Executes parallel searches and processes results

@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Workflow\Nodes;
+namespace App\Nodes;
 
-use App\Workflow\Agents\ResearchAgent;
-use App\Workflow\Events\ProgressEvent;
-use App\Workflow\Events\FormattingReportEvent;
-use App\Workflow\Events\SectionGenerationEvent;
-use App\Workflow\Prompts;
-use App\Workflow\SearchWorkflow;
+use App\Agents\ResearchAgent;
+use App\Events\ProgressEvent;
+use App\Events\FormattingReportEvent;
+use App\Events\SectionGenerationEvent;
+use App\Prompts;
+use App\SearchWorkflow;
 use NeuronAI\Chat\Messages\AssistantMessage;
 use NeuronAI\Chat\Messages\UserMessage;
 use NeuronAI\Exceptions\WorkflowException;

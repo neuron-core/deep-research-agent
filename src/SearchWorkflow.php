@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Workflow;
+namespace App;
 
-use App\Workflow\Nodes\GenerateQueries;
-use App\Workflow\Nodes\SearchTheWeb;
+use App\Nodes\GenerateQueries;
+use App\Nodes\SearchTheWeb;
 use NeuronAI\Workflow\Workflow;
 
 class SearchWorkflow extends Workflow

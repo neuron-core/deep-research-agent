@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Workflow\Nodes;
+namespace App\Nodes;
 
-use App\Workflow\Events\PerformSearchEvent;
-use App\Workflow\Events\ProgressEvent;
+use App\Events\PerformSearchEvent;
+use App\Events\ProgressEvent;
 use NeuronAI\Tools\Toolkits\Tavily\TavilySearchTool;
 use NeuronAI\Workflow\Node;
 use NeuronAI\Workflow\StopEvent;

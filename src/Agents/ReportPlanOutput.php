@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Workflow\Agents;
+namespace App\Agents;
 
 use NeuronAI\StructuredOutput\SchemaProperty;
 use NeuronAI\StructuredOutput\Validation\Rules\ArrayOf;
@@ -8,7 +8,7 @@ use NeuronAI\StructuredOutput\Validation\Rules\ArrayOf;
 class ReportPlanOutput
 {
     /**
-     * @var \App\Workflow\Agents\ReportSection[]
+     * @var \App\Agents\ReportSection[]
      */
     #[SchemaProperty(
         description: 'The sections of the report plan',

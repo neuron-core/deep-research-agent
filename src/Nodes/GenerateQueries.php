@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Workflow\Nodes;
+namespace App\Nodes;
 
-use App\Workflow\Agents\ResearchAgent;
-use App\Workflow\Agents\SearchQueriesOutput;
-use App\Workflow\Events\PerformSearchEvent;
-use App\Workflow\Events\ProgressEvent;
-use App\Workflow\Prompts;
+use App\Agents\ResearchAgent;
+use App\Agents\SearchQueriesOutput;
+use App\Events\PerformSearchEvent;
+use App\Events\ProgressEvent;
+use App\Prompts;
 use NeuronAI\Chat\Messages\UserMessage;
 use NeuronAI\Workflow\Node;
 use NeuronAI\Workflow\StartEvent;
