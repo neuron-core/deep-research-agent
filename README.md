@@ -36,7 +36,7 @@ Download the project on your machine and open your terminal in the project direc
 composer install
 ```
 
-Create a .env file in your project root (see .env.example for a template), and provides the API keys based on 
+Create a `.env` file in your project root (see `.env.example` for a template), and provides the API keys based on 
 the service you want to connect with.
 
 ```dotenv
