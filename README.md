@@ -49,16 +49,10 @@ TAVILY_API_KEY=[required]
 INSPECTOR_INGESTION_KEY=
 ```
 
-For Windows machine run
+Execute the agent with the command below:
 
 ```
-php .\windows.php
-```
-
-For Unix machine run:
-
-```
-php unix.php
+php research.php
 ```
 
 ## Workflow architecture and Nodes
