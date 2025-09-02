@@ -7,15 +7,9 @@
       "email": "valerio@inspector.dev"
     }
   ],
-  "repositories": [
-    {
-      "type": "git",
-      "url": "https://github.com/inspector-apm/neuron-ai"
-    }
-  ],
   "require": {
     "php": "^8.1",
-    "inspector-apm/neuron-ai": "2.*@dev",
+    "inspector-apm/neuron-ai": "^2.0",
     "vlucas/phpdotenv": "^5.6"
   },
   "autoload": {
