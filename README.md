@@ -19,7 +19,7 @@ need to refactor big portions of your application.
 If you are new to AI Agents development, or you already have experience, Neuron can be the perfect playground
 to move your idea from experiments to reliable production implementations.
 
-Checkout the documentation: https://docs.neuron-ai.dev
+Check out the documentation: https://docs.neuron-ai.dev
 
 ## Deep Research Features
 
@@ -30,7 +30,7 @@ Checkout the documentation: https://docs.neuron-ai.dev
 - **Streaming Results**: Get real-time updates as the report is generated
 
 ## How to use this project
-Download the project on your machine and open your terminal into the project directory. First, install the composer dependencies:
+Download the project on your machine and open your terminal in the project directory. First, install the composer dependencies:
 
 ```
 composer install
