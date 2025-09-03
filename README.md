@@ -40,13 +40,17 @@ Create a `.env` file in your project root (see `.env.example` for a template), a
 the service you want to connect with.
 
 ```dotenv
+# At least one required
 ANTHROPIC_API_KEY=
 GEMINI_API_KEY=
 OPENAI_API_KEY=
 
-TAVILY_API_KEY=[required]
+# Required
+TAVILY_API_KEY=
 
+# Optional
 INSPECTOR_INGESTION_KEY=
+INSPECTOR_TRANSPORT=sync
 ```
 
 Execute the agent with the command below:
