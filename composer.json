@@ -1,5 +1,5 @@
 {
-  "name": "neuron-core/neuron-demo",
+  "name": "neuron-core/deep-research-agent",
   "type": "project",
   "authors": [
     {
@@ -9,7 +9,7 @@
   ],
   "require": {
     "php": "^8.1",
-    "inspector-apm/neuron-ai": "^2.0",
+    "neuron-core/neuron-ai": "^2.0",
     "vlucas/phpdotenv": "^5.6"
   },
   "autoload": {
